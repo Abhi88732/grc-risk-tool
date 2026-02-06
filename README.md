@@ -46,6 +46,9 @@ risktool
 Create database in MySQL:
 
 ```sql
+
+application.properties
+
 CREATE DATABASE grc_risk_db;
 spring.datasource.url=jdbc:mysql://localhost:3306/grc_risk_db
 spring.datasource.username=root
@@ -53,21 +56,71 @@ spring.datasource.password=Example@2022#
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 server.port=9090
-Using Eclipse
 
-Open the project in Eclipse
+How to Run the Application (Using Eclipse)
 
-Right click on
+1. Clone the repository
+git clone https://github.com/Abhi88732/grc-risk-tool.git
+
+2.Open Eclipse IDE
+.File → Import → Existing Maven Project
+.Select the project folder
+
+3.Right-click on
 GrcRiskToolAbhishekPrasadApplication.java
 
-Select Run As → Java Application
+4.Select
+Run As → Java Application
 
-Wait for message:
-
+5.Wait for the message in console:
 Tomcat started on port(s): 9090
 
+Access the Application
 
+.Frontend UI:
+http://localhost:9090
 
+.REST APIs:
+    .POST /api/assess-risk
+    .GET /api/risks
+    .GET /api/risks?level=High
 
+Testing
 
+.Add multiple risks from the UI
+.Verify:
+  .Risk score calculation
+  .Risk level assignment
+  .Heatmap updates
+.Check MySQL table for persisted records
+
+Assumptions
+.Application runs locally without authentication
+.MySQL is installed and running
+.Basic validation handled at backend level
+
+TODO / Future Enhancements
+.Add dashboard table with sorting and filtering
+.CSV export of risks
+.Mitigation hint column based on risk level
+.Improve UI/UX
+.Add authentication and authorization
+.Add unit tests
+.Deploy application to cloud
+
+GRC Context
+This tool follows a commonly used Likelihood × Impact risk matrix
+approach, aligned with practices used in NIST and ISO-based GRC frameworks
+to prioritize organizational risks.
+
+---
+## Screenshots
+
+### Risk Assessment Dashboard & Heatmap
+
+The following screenshot shows the working Risk Assessment UI with a 5x5 risk heatmap.
+Each cell represents a Likelihood × Impact combination and displays the count of risks.
+Colors indicate risk severity as per standard GRC practices (Green → Red).
+
+![Risk Heatmap Dashboard](C:\Users\Windows_10\OneDrive\Pictures\Screenshots\Screenshot(6).png)
 
