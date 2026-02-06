@@ -118,5 +118,5 @@ to prioritize organizational risks.
 
 ### Risk Heatmap Dashboard
 
-![Risk Heatmap](screenshots/Screenshot(6).png)
+![Risk Heatmap](Screenshots/risk-heatmap.png)
 
