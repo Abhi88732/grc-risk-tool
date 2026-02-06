@@ -118,14 +118,4 @@ to prioritize organizational risks.
 
 ### Risk Heatmap Dashboard
 
-<<<<<<< HEAD
 ![Risk Heatmap](/risktool/Screenshots/RiskHeatmap.png)
-=======
-![Risk Heatmap](https://github.com/Abhi88732/grc-risk-tool/blob/main/risktool/Screenshots/risk-heatmap.png?raw=true)
-
-
-
-
-
->>>>>>> branch 'main' of https://github.com/Abhi88732/grc-risk-tool.git
-
