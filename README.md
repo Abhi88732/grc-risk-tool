@@ -113,10 +113,5 @@ This tool follows a commonly used Likelihood × Impact risk matrix
 approach, aligned with practices used in NIST and ISO-based GRC frameworks
 to prioritize organizational risks.
 
----
-## Screenshots
 
-### Risk Heatmap Dashboard
-
-![Risk Heatmap](/risktool/Screenshots/RiskHeatmap.png)
 
