@@ -50,11 +50,22 @@ CREATE DATABASE grc_risk_db;
 spring.datasource.url=jdbc:mysql://localhost:3306/grc_risk_db
 spring.datasource.username=root
 spring.datasource.password=Example@2022#
-
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
-
 server.port=9090
+Using Eclipse
+
+Open the project in Eclipse
+
+Right click on
+GrcRiskToolAbhishekPrasadApplication.java
+
+Select Run As → Java Application
+
+Wait for message:
+
+Tomcat started on port(s): 9090
+
 
 
 
