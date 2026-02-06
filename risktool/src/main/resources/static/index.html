@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GRC Risk Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Risk Assessment</h2>
+
+<form id="riskForm">
+  <input id="asset" placeholder="Asset" required>
+  <input id="threat" placeholder="Threat" required>
+
+  <input type="number" id="likelihood" min="1" max="5" value="3">
+  <input type="number" id="impact" min="1" max="5" value="3">
+
+  <p id="preview"></p>
+  <button>Add Risk</button>
+</form>
+
+<h2>Risk Heatmap</h2>
+<div class="heatmap">
+  <!-- 5x5 grid -->
+  <script>
+    for(let l=1;l<=5;l++){
+      document.write('<div class="row">');
+      for(let i=1;i<=5;i++){
+        document.write(`<div class="cell" data-l="${l}" data-i="${i}"></div>`);
+      }
+      document.write('</div>');
+    }
+  </script>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
