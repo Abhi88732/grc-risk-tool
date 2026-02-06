@@ -116,11 +116,7 @@ to prioritize organizational risks.
 ---
 ## Screenshots
 
-### Risk Assessment Dashboard & Heatmap
+### Risk Heatmap Dashboard
 
-The following screenshot shows the working Risk Assessment UI with a 5x5 risk heatmap.
-Each cell represents a Likelihood × Impact combination and displays the count of risks.
-Colors indicate risk severity as per standard GRC practices (Green → Red).
-
-![Risk Heatmap Dashboard](C:\Users\Windows_10\OneDrive\Pictures\Screenshots\Screenshot(6).png)
+![Risk Heatmap](screenshots/Screenshot(6).png)
 
